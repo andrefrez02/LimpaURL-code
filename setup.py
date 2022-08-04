@@ -4,7 +4,7 @@ base = None
 
 executables = [Executable("LimpaURL.py", base=base)]
 
-packages = ["idna", "pyperclip", "time"]
+packages = ["idna", "pyperclip", "time", "pyautogui"]
 options = {
     'build_exe': {    
         'packages':packages,
@@ -14,8 +14,8 @@ options = {
 setup(
     name = "Limpa URL",
     options = options,
-    version = "0.02",
-    description = 'Executável para limpar uma string para um padrão de URL.',
+    version = "0.04",
+    description = '*Copie o texto que deseja e deixe o programa rodar sem interferências.',
     executables = executables
 )
 
